@@ -1,0 +1,28 @@
+.Box{
+    width:150px;
+    height:150px;
+    margin:auto;
+    border-radius: 100;
+    background-color: lightgoldenrodyellow;
+    animation:colorchager 3s infinite;
+    animation-name:colorchanger;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+    @keyframes colorchanger{
+        0%{
+            background-color: darkmagenta;
+            transform: scale(0,3);
+       }
+       50%{
+        background-color: crimson;
+        /*transform:translate(0,50px);*/
+        transform: scale(1);
+       }
+       100%{
+        background-color: aqua;
+        /* transform:translate(0,300px);*/
+        transform:scale(3,0);
+       }
+    }
